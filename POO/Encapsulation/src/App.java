@@ -53,9 +53,9 @@ public class App {
         System.out.println(personaje.getFuerza());
         System.out.println(enemigo.getFuerza());
         personaje.setFuerza(15);
-        enemigo.setFuerza(10);
-        System.out.println(personaje.getFuerza());
-        System.out.println(enemigo.getFuerza());
-        
+        enemigo.setFuerza(-10);
+        System.out.println("Fuerza Personaje " + personaje.getFuerza());
+        System.out.println("Fuerza enemigo " + enemigo.getFuerza());
+
     }
 }

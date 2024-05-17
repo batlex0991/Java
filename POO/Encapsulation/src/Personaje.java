@@ -5,12 +5,17 @@ public class Personaje {
     int fuerza = 0;
     int inteligencia = 0;
     int defensa = 0;
+
     public int getFuerza() {
         return fuerza;
     }
 
     public void setFuerza(int fuerza) {
-        this.fuerza = fuerza;
+        if (fuerza < 0) {
+            System.out.println("Ingresaste valor negativo");
+        } else {
+            this.fuerza = fuerza;
+        }
     }
 
     int vida = 0;
